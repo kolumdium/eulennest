@@ -1,0 +1,44 @@
+# pull official base image
+FROM node:17.3.1-alpine as build
+
+RUN apk --update add git
+RUN apk add --update --no-cache p7zip
+RUN apk --update add wget
+
+RUN git clone https://github.com/kolumdium/eulennest.git
+
+# set working directory
+WORKDIR /eulennest
+# RUN mkdir public
+
+#var needs to be defined
+ARG img_pwd
+
+RUN echo $img_pwd
+
+RUN cd public &&\
+wget -O images.zip https://www.dropbox.com/s/yuy8fx5c5wj8ths/images.zip?dl=1
+
+RUN cd public &&\
+7z x -p$img_pwd images.zip
+
+RUN cd public &&\
+rm images.zip
+
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /eulennest/node_modules/.bin:$PATH
+
+#clean install
+RUN npm ci
+
+#build
+RUN npm run build
+
+# production environment
+FROM nginx:stable-alpine
+COPY --from=build /eulennest/build /usr/share/nginx/html
+RUN chmod 755 /usr/share/nginx/html/images
+
+EXPOSE 80
+# EXPOSE 443
+CMD ["nginx", "-g", "daemon off;"]
