@@ -12,18 +12,18 @@ WORKDIR /eulennest
 # RUN mkdir public
 
 #var needs to be defined
-ARG img_pwd
+# ARG img_pwd
 
-RUN echo $img_pwd
+# RUN echo $img_pwd
 
-RUN cd public &&\
-wget -O images.zip https://www.dropbox.com/s/yuy8fx5c5wj8ths/images.zip?dl=1
+# RUN cd public &&\
+# wget -O images.zip https://www.dropbox.com/s/yuy8fx5c5wj8ths/images.zip?dl=1
 
-RUN cd public &&\
-7z x -p$img_pwd images.zip
+# RUN cd public &&\
+# 7z x -p$img_pwd images.zip
 
-RUN cd public &&\
-rm images.zip
+# RUN cd public &&\
+# rm images.zip
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /eulennest/node_modules/.bin:$PATH
@@ -37,8 +37,12 @@ RUN npm run build
 # production environment
 FROM nginx:stable-alpine
 COPY --from=build /eulennest/build /usr/share/nginx/html
-RUN chmod 755 /usr/share/nginx/html/images
+
+RUN wget https://raw.githubusercontent.com/kolumdium/eulennest/main/getpictures.sh
+RUN chmod 755 ./getpictures.sh
 
 EXPOSE 80
 # EXPOSE 443
-CMD ["nginx", "-g", "daemon off;"]
+# CMD ["./getpictures.sh"]
+#TODO only run the custom script once
+ENTRYPOINT ./getpictures.sh && nginx -g 'daemon off;'

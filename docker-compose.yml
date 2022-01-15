@@ -1,18 +1,30 @@
 version: '3.7'
 
+secrets:
+  # For Portainer
+  # IMG_PWD:
+  #   external: true
+# For Test
+  mysecret:
+    file: ./mysecret.txt
 services:
   eulennest:
-    container_name: eulennest
+    # container_name: eulennest
     build:
       context: .
       dockerfile: Dockerfile.prod
       args:
         img_pwd: ${IMG_PWD}
-    # ports:
-    #   - '3000:80'
+    ports:
+      - '3000:80'
+    secrets:
+      - mysecret
+
     # environment:
     #  - VIRTUAL_HOST=foerderverein-eulennest.de
     #  - LETSENCRYPT_HOST=foerderverein-eulennest.de
     # #  - VIRTUAL_PORT=3000
     #  - LETSENCRYPT_EMAIL=martin.plank@protonmail.com
-    
+# secrets:
+#   my_secret:
+#     file: ./mysecret.txt
