@@ -7,13 +7,15 @@ import { theme } from './theme';
 import { ThemeProvider } from '@mui/material/styles';
 // import { ThemeProvider } from '@mui/material';
 
+
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>,
+    <React.StrictMode>
+      <ThemeProvider theme={theme}>
+        <App></App>
+      </ThemeProvider>
+    </React.StrictMode>,
   document.getElementById('root')
+
 );
 
 // If you want to start measuring performance in your app, pass a function

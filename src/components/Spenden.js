@@ -11,7 +11,7 @@ const Spenden = () => {
         </Typography>
         <Typography variant = "body1" sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex'}, justifyContent:"center", textAlign:"center" }}>
             Alle Spenden kommen unseren Kindern und Jugendlichen zu Gute. Tragen auch Sie mit dazu bei, ihnen ein Zuhause und eine langfristige Perspektive zu sichern.
-            Der Förderverein ist als gemeinnütziger Verein vom Finanzamt bestätigt. Spenden sind daher steuerlich absetzbar. Wir stellen Ihenen dazu gern einen Spendenbeleg aus.
+            Der Förderverein ist als gemeinnütziger Verein vom Finanzamt bestätigt. Spenden sind daher steuerlich absetzbar. Wir stellen Ihenen dazu gerne einen Spendenbeleg aus.
         </Typography>
         <Container>
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>

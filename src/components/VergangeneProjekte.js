@@ -9,21 +9,21 @@ const VergangeneProjekte = () => {
                 <ProjektAbgeschlossen 
                     image = "images/Leaf1.jpg" 
                     title = "Gemeinsam arbeiten macht am meisten Spaß" 
-                    text = "Die Kinder verbringen immer wieder Zeit mit den Mitarbeitern der Firma ETS. Was die Erwachsenen am meisten freut."
+                    text = "Die Kinder verbringen immer wieder Zeit mit den Mitarbeiter*innen der Firma ETS. Dabei helfen sie zum Beispiel bei Aktivitäten wie dem Laubharken. Was die Erwachsenen am meisten freut."
                     pictures = {["images/Leaf2.jpg"]}/>
             </Grid>
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektAbgeschlossen 
                     image = "images/garage.jpg" 
                     title = "Gemeinsame Pause auch" 
-                    text = "Die Kinder verbringen immer wieder Zeit mit den Mitarbeitern der Firma ETS. Was die Erwachsenen am meisten freut."/>
+                    text = "Nach getaner Arbeit muss sich auch wieder gesterkt werden. Die Pausenzeiten werden immer in Gemeinschaft verbracht."/>
             </Grid>
             
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektAbgeschlossen 
                     image = "images/pavillion_3.jpg" 
                     title = "Pavillion bauen" 
-                    text = "Es wurde mit der Hilfe der Kinder im Jahr 2020 ein Pavillion auf Ihrem Grundstück errichtet."
+                    text = "Im Jahr 2020 haben uns die Kinder tatkräftig dabei unterstützt einen Pavillion auf ihrem Grundstück zu errichten."
                     pictures = {["images/pavillion_1.jpg", "images/pavillion_2.jpg", "images/pavillion_4.jpg"]}/>
             </Grid>
             <Grid item xs={4} sm={4} md={4}>
@@ -36,7 +36,7 @@ const VergangeneProjekte = () => {
                 <ProjektAbgeschlossen 
                     image = "images/malen.jpg" 
                     title = "Malen mit Hand und Fuß" 
-                    text = "Verschönerung der Unterkunft durch Blumen und Bilder"/>
+                    text = "Das Eulennest wurde mit Hilfe von Blumen und selbstgemachten Bildern verschönert."/>
             </Grid>
     </Grid>
     </Container>);

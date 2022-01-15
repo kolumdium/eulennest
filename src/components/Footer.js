@@ -59,7 +59,7 @@ const Footer = () => {
                                         +"0391 631040430\n"
                                         +"A.Stacker@ets-magdeburg.de\n"
                                         +"Johann-Gottlieb-Schoch-Str. 3\n"
-                                        +"39128 Magdeburg"); 
+                                        +"39108 Magdeburg"); 
                                     setOpen(true);
                                     setTimeout(() => {
                                         setOpen(false);
@@ -113,7 +113,7 @@ const Footer = () => {
                             </FakeButton>
                             <FakeButton 
                                 onClick={() =>  {
-                                    navigator.clipboard.writeText("39128 Magdeburg"); 
+                                    navigator.clipboard.writeText("39108 Magdeburg"); 
                                     setOpen(true);
                                     setTimeout(() => {
                                         setOpen(false);

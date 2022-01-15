@@ -66,17 +66,18 @@ function ProjektAbgeschlossen(props){
 
                         <Grid container spacing={{ xs: 0, md: 0 }} columns={{ xs: 12, sm: 12, md: 12 }}>
                             {itemData.map((item) => (
-                                <Grid item xs={12} sm={12} md={12}>
-                                <Image
-                                    fit = "scale-down"
-                                    width = "100%"
-                                    height = "80%"
-                                    showLoading={true}
-                                    src={`${item}`}
-                                    // srcSet={`${item}`}
-                                    // alt={item}
-                                    loading="lazy"
-                                />
+                                <Grid item xs={12} sm={12} md={12} key={item}>
+                                    <Image
+                                        fit = "scale-down"
+                                        width = "100%"
+                                        height = "80%"
+                                        showLoading={true}
+                                        src={`${item}`}
+                                        // key={1}
+                                        // srcSet={`${item}`}
+                                        // alt={item}
+                                        loading="lazy"
+                                    />
                                 </Grid>
                             ))}
                         </Grid>

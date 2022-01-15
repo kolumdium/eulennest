@@ -30,7 +30,7 @@ werden die Projekte gemeinsam mit den Kindern umgesetzt.
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex'}, justifyContent:"center" , textAlign:"center"}}
           >
-            Der Verein ist bereits seit 2015 Jahren aktiv. Sozialle Zuwendungen sind dabei genauso wichtig wie materielle weshalb die Aktivitäten oft nicht nur für sondern mit den Kindern gemacht werden.
+            Der Verein ist bereits seit 2015 aktiv. Soziale Zuwendungen sind dabei genauso wichtig wie materielle, weshalb die Aktivitäten oft nicht nur für, sondern mit den Kindern gemacht werden.
         </Typography>
     </Container>);
 }

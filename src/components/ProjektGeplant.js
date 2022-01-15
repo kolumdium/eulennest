@@ -11,7 +11,7 @@ function ProjekteGeplant(props){
     return (<Card sx = {{ marginBottom: 5}}>
         <CardActionArea>
             {/* <CardMedia className={classes.media} image = {props.path}></CardMedia> */}
-            <CardContent sx = {{ minHeight:100}}>
+            <CardContent sx = {{ minHeight:150}}>
                 <Typography variant="h5">{props.title}</Typography>
                 <Typography variant="body1">{props.text}</Typography>
             </CardContent>
