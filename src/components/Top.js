@@ -10,7 +10,7 @@ const Top = () => {
         <div>
             <Box sx = {{height:"50vh", marginTop: 3, overflow:"false"}}>
                 <Image 
-                    src={"images/logotmp.png"} 
+                    src={"images/LogoTmp.png"} 
                     showLoading={true}
                     fit = "scale-down"
                     // width = "100%"
