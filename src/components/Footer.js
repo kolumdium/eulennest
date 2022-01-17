@@ -92,13 +92,13 @@ const Footer = () => {
                             <FakeButton 
                                 startIcon={<Mail />}
                                 onClick={() =>  {
-                                        navigator.clipboard.writeText("A.Stacker@ets-magdeburg.de"); 
+                                        navigator.clipboard.writeText("foerderverein@eulennest-md.de"); 
                                         setOpen(true);
                                         setTimeout(() => {
                                             setOpen(false);
                                         }, 3000);
                                     }}>
-                                Email: A.Stacker@ets-magdeburg.de
+                                Email: foerderverein@eulennest-md.de
                             </FakeButton>
                             <FakeButton 
                                 startIcon={<House />}
