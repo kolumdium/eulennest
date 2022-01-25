@@ -119,7 +119,7 @@ const Footer = () => {
                                         setOpen(false);
                                     }, 3000);
                                 }}>
-                                39128 Magdeburg
+                                39108 Magdeburg
                             </FakeButton>
                         </Stack>
                     </Grid>
