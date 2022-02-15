@@ -10,13 +10,13 @@ const VergangeneProjekte2 = () => {
                 <ProjektAbgeschlossen 
                     image = "images/kind_bohren.jpg" 
                     title = "Weiterbildung und Praxis" 
-                    text = "Wir unterstützen die Kinder auch dabei ihre eigenen Projekte zu planen und umzustezen."/>
+                    text = "Die Projekte gehen wir gemeinsam an. Die Kinder lernen spielend den Umgang mit Material und Werkzeug."/>
             </Grid>
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektAbgeschlossen 
                     image = "images/fahrradkeller.jpg" 
                     title = "Radspende" 
-                    text = "Zu Weihnachten 2020 hat der Ferein dem Eulennest 14 Fahrräder gestiftet."/>
+                    text = "Weihnachten 2020 bekamen die Kinder von der Patenbrigade ETS 14 Fahrräder geschenkt."/>
             </Grid>
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektAbgeschlossen 
@@ -28,7 +28,7 @@ const VergangeneProjekte2 = () => {
                 <ProjektAbgeschlossen 
                     image = "images/rad_rep_1.jpg" 
                     title = "Reparaturstunde" 
-                    text = "Anschließend an den Ausflug wurden die Räder gemeinsam mit den Kindern gepflegt und repariert."/>
+                    text = "Gemeinsam mit den Kindern haben wir eine AG Fahrrad gegründet. Regelmäßig werden die Fahrräder kontrolliert und repariert."/>
             </Grid>
     </Grid>
     </Container>);

@@ -7,13 +7,13 @@ const AktuelleProjekte = () => {
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektGeplant title = "Gartenhaus" 
-                text = "Ein Gartenhaus soll errichtet werden, um den Kindern einen Ort zu geben an dem sie zum Beispiel lernen können ihre Fahrräder zu reparieren."/>
+                text = "Bau eines Gartenhauses und Einrichtung als Kinder- und Bastelwerkstatt"/>
             </Grid>
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektGeplant title = "Neue T-shirts" text = "Um das Gemeinschaftsgefühl zu fördern, sollen alle Kinder T-Shirts mit dem Eulennest-Logo erhalten."/>
             </Grid>
             <Grid item xs={4} sm={4} md={4}>
-                <ProjektGeplant title = "Umbau" text = "Die Kinderzimmer sollen mit Hilfe von Großbildern verschönert und kindgerechter gemacht werden."/>
+                <ProjektGeplant title = "Umbau" text = "Malerarbeiten und einziehen von Zwischenwänden zur Verschönerung der Kinderzimmer."/>
             </Grid>
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektGeplant title = "Abenteuerspielplatz" text = "Der bereits bestehende Spielplatz aus Euro-Paletten soll durch einen neuen, richtigen Abenteuerspielplatz ersetzt werden."/>

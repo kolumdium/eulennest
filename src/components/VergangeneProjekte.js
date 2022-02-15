@@ -8,15 +8,15 @@ const VergangeneProjekte = () => {
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektAbgeschlossen 
                     image = "images/Leaf1.jpg" 
-                    title = "Gemeinsam arbeiten macht am meisten Spaß" 
-                    text = "Die Kinder verbringen immer wieder Zeit mit den Mitarbeiter*innen der Firma ETS. Dabei helfen sie zum Beispiel bei Aktivitäten wie dem Laubharken. Was die Erwachsenen am meisten freut."
+                    title = "Subbotnik" 
+                    text = "Gemeinsam arbeiten macht Spaß - nicht nur den Kindern. Auch die Erwachsenen haben Spaß, Zeit mit den Kindern zu verbringen."
                     pictures = {["images/Leaf2.jpg"]}/>
             </Grid>
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektAbgeschlossen 
                     image = "images/garage.jpg" 
-                    title = "Gemeinsame Pause auch" 
-                    text = "Nach getaner Arbeit muss sich auch wieder gesterkt werden. Die Pausenzeiten werden immer in Gemeinschaft verbracht."/>
+                    title = "Pause" 
+                    text = "Wer fleißig ist, darf auch Pause machen. Das genießen sowohl die Erwachsenen als auch die Kinder"/>
             </Grid>
             
             <Grid item xs={4} sm={4} md={4}>
