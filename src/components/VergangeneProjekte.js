@@ -7,6 +7,13 @@ const VergangeneProjekte = () => {
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             <Grid item xs={4} sm={4} md={4}>
                 <ProjektAbgeschlossen 
+                    image = "images/gartenhaus05.jpg" 
+                    title = "Gartenhaus" 
+                    text = "Bau eines Gartenhauses und Einrichtung als Kinder- und Bastelwerkstatt."
+                    pictures = {["images/gartenhaus01.jpg","images/gartenhaus02.jpg","images/gartenhaus03.jpg","images/gartenhaus04.jpg"]}/>
+            </Grid>
+            <Grid item xs={4} sm={4} md={4}>
+                <ProjektAbgeschlossen 
                     image = "images/Leaf1.jpg" 
                     title = "Subbotnik" 
                     text = "Gemeinsam arbeiten macht Spaß - nicht nur den Kindern. Auch die Erwachsenen haben Spaß, Zeit mit den Kindern zu verbringen."
